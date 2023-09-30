@@ -1,0 +1,1 @@
+text = "did you know if you suck absolute ass you die forever?"
