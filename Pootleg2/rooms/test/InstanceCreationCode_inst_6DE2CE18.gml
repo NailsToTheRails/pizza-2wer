@@ -1,1 +1,1 @@
-text = "this shit is UNFINISHED!!"
+text = "aruu please stop cheating on other people you fucking hypersexual whore"

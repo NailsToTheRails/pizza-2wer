@@ -1,4 +1,4 @@
-//@idle
+ //@idle
 function scr_player_normal()
 {
 	 if (keyboard_check(vk_shift))
@@ -198,14 +198,13 @@ state = states.machjump
 	hsp = approach(hsp, image_xscale * 10, 3)
 	if (place_meeting(x+image_xscale,y,obj_solid))
 	{
-		if place_meeting(x + hsp , (y), obj_metalblock)
-			{
-				with (instance_place(x + hsp, (y), obj_metalblock))
-					instance_destroy(self)
-			} 
-			if place_meeting(x + hsp , (y), obj_destroyable)
+				if place_meeting(x + hsp , (y), obj_destroyable)
 			{
 				with (instance_place(x + hsp, (y), obj_destroyable))
+					instance_destroy(self)
+			} else if place_meeting(x + hsp , (y), obj_metalblock)
+			{
+				with (instance_place(x + hsp, (y), obj_metalblock))
 					instance_destroy(self)
 			} else 		if (place_meeting(x+image_xscale,y,obj_solid) && place_meeting(x,y+3,obj_slope) && grounded)
 	{
@@ -435,29 +434,22 @@ state = states.machjump
 	mach = 2
 	image_speed = 0.4;
 		hsp = approach(hsp, (image_xscale * 9), 0.3)
-if (place_meeting(x + image_xscale, y, obj_solid))
-{
-    if (place_meeting(x + hsp * image_xscale, y, obj_destroyable))
-    {
-        with (instance_place(x + hsp * image_xscale, y, obj_destroyable))
-        {
-            instance_destroy();
-        }
-    }
-    else if (place_meeting(x + image_xscale, y, obj_solid) && place_meeting(x, y + 3, obj_slope) && grounded)
-    {
-        // Handle wall jump
-        state = states.walljump;
-        hsp = 0;
-    }
-    else
-    {
-        // Handle the else case
-        state = states.bashend;
-        vsp = -6;
-        hsp = -image_xscale * 6;
-    }
-}
+	if (place_meeting(x+image_xscale,y,obj_solid))
+	{
+				if place_meeting(x + hsp , (y), obj_destroyable)
+			{
+				with (instance_place(x + hsp, (y), obj_destroyable))
+					instance_destroy(self)
+			} else 		if (place_meeting(x+image_xscale,y,obj_solid) && place_meeting(x,y+3,obj_slope) && grounded)
+	{
+		state = states.walljump
+		hsp = 0
+	} else {
+		state = states.bashend
+		vsp = -6
+		hsp = -image_xscale * 6
+	}
+	}
 	if (hsp = image_xscale * 9) {
 	state = states.mach
 	mach = 3
