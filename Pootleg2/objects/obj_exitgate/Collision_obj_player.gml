@@ -7,6 +7,7 @@ obj_player.state = states.rank
 global.panic = 0
 //restart
 //Level rank saves
+global.laps = 0 //GRR I HATE GAMEMAKER UPDATE
 
 ini_open("saveData.ini");
 

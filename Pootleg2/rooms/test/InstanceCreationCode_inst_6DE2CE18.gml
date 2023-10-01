@@ -1,1 +1,1 @@
-text = "aruu please stop cheating on other people you fucking hypersexual whore"
+text = "aruu please stop cheating on other people you fucking hypersexual whore grr you SLUT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
