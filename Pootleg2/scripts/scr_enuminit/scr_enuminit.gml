@@ -26,6 +26,9 @@ enum states {
 	knightslide,
 	fireass,
 	timesup,
-	gameover
+	gameover,
+	superjumpprep,
+	superjump,
+	superjumpland
 }
 }

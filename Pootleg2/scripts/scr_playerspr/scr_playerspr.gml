@@ -33,6 +33,10 @@ spr_mach2 = spr_player_mach
 spr_mach1 = spr_player_mach1
 spr_mach2turn = spr_player_machslideboost
 spr_wallrun = spr_player_climbwall
+spr_superjumpprep = spr_player_superjumppreplight
+		spr_superjump = spr_player_superjump
+	spr_superjumpmove = spr_player_superjumpright
+	spr_superjumpland = spr_player_superjumpland
 		}
 			if (character == "SP") {
 					spr_palette = spr_pizzypalette
@@ -68,6 +72,10 @@ spr_wallrun = spr_player_climbwall
     spr_mach1 = spr_playerSP_mach1
     spr_mach2turn = spr_playerSP_machslideboost
     spr_wallrun = spr_playerSP_climbwall	
+	spr_superjumpprep = spr_playerSP_superjumppreplight
+		spr_superjump = spr_playerSP_superjump
+	spr_superjumpland = spr_playerSP_superjumpland
+		spr_superjumpmove = spr_playerSP_superjumpright
 			}
 				if (character == "N") {
 					spr_palette = spr_noisepalette
@@ -103,5 +111,9 @@ spr_wallrun = spr_player_climbwall
     spr_mach1 = spr_playerN_mach1
     spr_mach2turn = spr_playerN_machslideboost
     spr_wallrun = spr_playerN_climbwall
+	spr_superjumpprep = spr_playerN_Sjumpprep
+	spr_superjump = spr_playerN_Sjump
+	spr_superjumpland = spr_playerN_Sjumpland
+		spr_superjumpmove = spr_playerN_Sjumpmoveright
 				}
 }

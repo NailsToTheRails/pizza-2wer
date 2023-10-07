@@ -26,6 +26,9 @@ switch (state)
 	case states.mach1: scr_player_mach() break
 	case states.mach2: scr_player_mach2() break
 		case states.walljump: scr_player_walljump() break
+		case states.superjumpprep: scr_player_superjumpprep() break
+		case states.superjump: scr_player_superjump() break
+				case states.superjumpland: scr_player_superjumpland() break
 	//transfo
 	case states.knightjump: scr_player_knightjump() break
 	case states.knight: scr_player_knightnormal() break

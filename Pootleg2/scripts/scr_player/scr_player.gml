@@ -1,6 +1,7 @@
  //@idle
 function scr_player_normal()
 {
+		mask_index = spr_player_mask
 	 if (keyboard_check(vk_shift))
 	{
 		state = states.mach1
@@ -41,6 +42,7 @@ function scr_player_normal()
 //@jump
 function scr_player_jump()
 {
+		mask_index = spr_player_mask
 					image_speed = 0.4;
 	 if (jumpAnim == 1) {
 	        if (floor(image_index) == (image_number - 1)) 
@@ -188,6 +190,56 @@ if (grounded) {
 }
 }
 //@mach
+function scr_player_superjumpprep() {
+image_speed = 0.4
+mask_index = spr_crouchmask
+var move = (keyboard_check(vk_right) - keyboard_check(vk_left))
+	hsp = approach(hsp, move * 3, 0.42)
+	if (move != 0)
+	{
+				image_speed = move / 2.5
+		image_xscale = move
+		sprite_index = spr_superjumpprep
+image_speed = 0.4
+	}
+	else {
+		sprite_index = spr_superjumpmove
+		image_speed = 0.4
+	}
+	if (keyboard_check_released(vk_up)) {
+	state = states.superjump
+	vsp = -4
+	mask_index = spr_player_mask
+	sprite_index = spr_superjump
+	}
+}
+function scr_player_superjump() {
+		mask_index = spr_player_mask
+var move = (keyboard_check(vk_right) - keyboard_check(vk_left))
+	hsp = approach(hsp, move * 0.05, 1)
+		vsp = -20
+			if (place_meeting(x,y - 2,obj_solid))
+	{
+		state = states.superjumpland
+		sprite_index = spr_superjumpland
+	}
+	if (keyboard_check(vk_shift)) {
+	state = states.mach	
+	hsp = 9 * image_xscale
+	vsp = -5
+	}
+	image_speed = 0.4
+}
+function scr_player_superjumpland() {
+		mask_index = spr_player_mask
+			image_speed = 1
+	vsp = 0
+	sprite_index = spr_superjumpland
+	hsp = 0
+	 if (floor(image_index) == (image_number - 1))  {
+				state = states.normal
+	    }
+}
 function scr_player_mach1()
 {
 if (!grounded) {
@@ -196,6 +248,9 @@ state = states.machjump
 	mach = 3
 	image_speed = 0.4;
 	hsp = approach(hsp, image_xscale * 10, 3)
+	if (keyboard_check(vk_up)) {
+	state = states.superjumpprep	
+	}
 	if (place_meeting(x+image_xscale,y,obj_solid))
 	{
 				if place_meeting(x + hsp , (y), obj_destroyable)
