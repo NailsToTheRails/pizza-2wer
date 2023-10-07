@@ -184,6 +184,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Unused","folderPath":"folders/Tile Sets/Unused.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"War","folderPath":"folders/Tile Sets/War.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"war","folderPath":"folders/Rooms/levels/war.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -961,6 +962,7 @@
     {"id":{"name":"obj_rank","path":"objects/obj_rank/obj_rank.yy",},},
     {"id":{"name":"scribble_anim_blink","path":"scripts/scribble_anim_blink/scribble_anim_blink.yy",},},
     {"id":{"name":"spr_playerN_current","path":"sprites/spr_playerN_current/spr_playerN_current.yy",},},
+    {"id":{"name":"war_1","path":"rooms/war_1/war_1.yy",},},
     {"id":{"name":"spr_playerN_wallclingstart","path":"sprites/spr_playerN_wallclingstart/spr_playerN_wallclingstart.yy",},},
     {"id":{"name":"spr_playerSP_piledriverstart","path":"sprites/spr_playerSP_piledriverstart/spr_playerSP_piledriverstart.yy",},},
     {"id":{"name":"spr_player_walljumpstart","path":"sprites/spr_player_walljumpstart/spr_player_walljumpstart.yy",},},
@@ -1819,6 +1821,7 @@
     {"roomId":{"name":"medieval_4","path":"rooms/medieval_4/medieval_4.yy",},},
     {"roomId":{"name":"ancient_1","path":"rooms/ancient_1/ancient_1.yy",},},
     {"roomId":{"name":"ancient_2","path":"rooms/ancient_2/ancient_2.yy",},},
+    {"roomId":{"name":"war_1","path":"rooms/war_1/war_1.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [
