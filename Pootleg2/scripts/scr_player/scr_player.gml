@@ -224,7 +224,7 @@ var move = (keyboard_check(vk_right) - keyboard_check(vk_left))
 		sprite_index = spr_superjumpland
 	}
 	if (keyboard_check(vk_shift)) {
-	state = states.mach	
+	state = states.machjump	
 	hsp = 9 * image_xscale
 	vsp = -5
 	}
