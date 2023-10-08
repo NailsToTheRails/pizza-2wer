@@ -64,15 +64,15 @@ if (distance_to_object(obj_player) < 40) {
 				alarm[0] = 2;
 			}			
 		break;
-										case "lv4":
+										case "WAR":
 		    with (obj_hud)
 			{
-		        message = "FUST FUUG SHAULGOON";
+		        message = "WAR";
 				showtext = 1;
 				alarm[0] = 2;
 			}			
 		break;
-		case "lv5":
+		case "desert":
 		    with (obj_hud)
 			{
 		        message = "DESORT";
@@ -80,7 +80,7 @@ if (distance_to_object(obj_player) < 40) {
 				alarm[0] = 2;
 			}			
 		break;
-		case "lv6":
+		case "farm":
 		    with (obj_hud)
 			{
 		        message = "FUHM MARN";
@@ -88,7 +88,7 @@ if (distance_to_object(obj_player) < 40) {
 				alarm[0] = 2;
 			}			
 		break;
-		case "lv7":
+		case "beach":
 		    with (obj_hud)
 			{
 		        message = "WILD BITCH THE BEACH";

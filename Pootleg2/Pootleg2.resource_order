@@ -29,6 +29,7 @@
     {"name":"levels","order":3,"path":"folders/Rooms/levels.yy",},
     {"name":"ancient","order":3,"path":"folders/Rooms/levels/ancient.yy",},
     {"name":"medieval","order":2,"path":"folders/Rooms/levels/medieval.yy",},
+    {"name":"war","order":4,"path":"folders/Rooms/levels/war.yy",},
     {"name":"Scribble","order":16,"path":"folders/Scribble.yy",},
     {"name":"(System - don't call these functions)","order":1,"path":"folders/Scribble/(System - don't call these functions).yy",},
     {"name":"Classes","order":1,"path":"folders/Scribble/(System - don't call these functions)/Classes.yy",},
@@ -170,7 +171,6 @@
     {"name":"Unused","order":23,"path":"folders/Tile Sets/Unused.yy",},
     {"name":"War","order":24,"path":"folders/Tile Sets/War.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"war","order":4,"path":"folders/Rooms/levels/war.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_knightpep_idle","order":10,"path":"sprites/spr_knightpep_idle/spr_knightpep_idle.yy",},
@@ -921,6 +921,7 @@
     {"name":"spr_tvtimeout","order":26,"path":"sprites/spr_tvtimeout/spr_tvtimeout.yy",},
     {"name":"spr_player_ghostdashdown","order":2,"path":"sprites/spr_player_ghostdashdown/spr_player_ghostdashdown.yy",},
     {"name":"sprite_tile_minigolf2_shad","order":4,"path":"sprites/sprite_tile_minigolf2_shad/sprite_tile_minigolf2_shad.yy",},
+    {"name":"spr_thecat","order":23,"path":"sprites/spr_thecat/spr_thecat.yy",},
     {"name":"obj_destroyable","order":18,"path":"objects/obj_destroyable/obj_destroyable.yy",},
     {"name":"spr_player_ratballoon","order":248,"path":"sprites/spr_player_ratballoon/spr_player_ratballoon.yy",},
     {"name":"spr_grandpop","order":2,"path":"sprites/spr_grandpop/spr_grandpop.yy",},

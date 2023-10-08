@@ -1,1 +1,1 @@
-levelname = "lv7"
+levelname = "beach"

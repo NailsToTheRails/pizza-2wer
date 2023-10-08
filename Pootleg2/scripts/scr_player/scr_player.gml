@@ -174,13 +174,31 @@ function scr_player_crouchjump()
 }
 //@bodysuck
 function scr_player_bodyslam() {
-	vsp = approach(9,12,1)
+	vsp = approach(vsp,12,5)
 	image_speed = 0.4;
 var move = (keyboard_check(vk_right) - keyboard_check(vk_left))
 	hsp = approach(hsp, move * 4, 0.46)
 sprite_index = spr_groundpound
 if (grounded) {
-	if place_meeting(x , y+3, obj_metalblock)
+	if (place_meeting(x,y+2,obj_slope))
+		{
+			var slopexscale = instance_place(x,y+1,obj_slope)
+	image_xscale = clamp(-slopexscale.image_xscale,-1,1)
+			hsp = (image_xscale * hsp_momentum)
+			state = states.mach
+			hsp_momentum = approach(hsp,4, 0.05)
+			sprite_index = spr_mach
+			groundtimer = 25
+		} else if (place_meeting(x,y+2,obj_slopePlatform))
+		{
+			var slopexscale = instance_place(x,y+1,obj_slopePlatform)
+	image_xscale = clamp(-slopexscale.image_xscale,-1,1)
+			hsp = (image_xscale * hsp_momentum)
+			state = states.mach
+			hsp_momentum = approach(hsp,4, 0.05)
+			sprite_index = spr_mach
+			groundtimer = 25
+		} else if place_meeting(x , y+3, obj_metalblock)
 			{
 				with (instance_place(x, (y+3), obj_metalblock))
 					instance_destroy(self)
@@ -583,7 +601,6 @@ mach = 1
 	}
 	if (!keyboard_check(vk_shift))
 		state = states.normal
-
 }
 //@powers
 function scr_player_knightslide() {
