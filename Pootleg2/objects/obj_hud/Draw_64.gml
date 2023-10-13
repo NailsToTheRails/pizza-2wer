@@ -3,7 +3,10 @@ draw_text(53,410,string_upper(global.rank))
 draw_text(53,390,obj_player.y)
 draw_text(53,350,obj_player.x)
 //-----why------//
+
 draw_set_font(global.ptfont);
+	draw_sprite_ext(spr_tvdefault,image_index,860,85,1,1,0,c_white,1)
+draw_text_scribble_ext(855, 74, "[fa_center]" + string(global.collect), 900)
 draw_text_scribble_ext(xi, yi, "[wheel][fa_center][rainbow][wave]" + message, 900)
 //-pt-//
 //Timer
@@ -50,8 +53,7 @@ if (global.panic)
 	//collecttv//
 		var hud_xx = 121 + irandom_range(-collect_shake, collect_shake);
 	var hud_yy = 90 + irandom_range(-collect_shake, collect_shake) + hud_posY;
-	draw_sprite_ext(spr_tvdefault,image_index,860,85,1,1,0,c_white,1)
-draw_text_scribble_ext(855, 74, "[fa_center]" + string(global.collect), 900)
+
 var _score = global.collect;
 	var rx = hud_xx + 142;
 	var ry = hud_yy - 22;

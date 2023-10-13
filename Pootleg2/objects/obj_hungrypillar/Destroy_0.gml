@@ -19,6 +19,9 @@ global.fill = 2555
         case test:
 global.fill = 2555
             break;
+			default:
+			global.fill = 2555
+			    break;
     }
     
     obj_hud.alarm[1] = 60;
