@@ -7,7 +7,7 @@ draw_set_font(global.ptfont);
 draw_text_scribble_ext(xi, yi, "[wheel][fa_center][rainbow][wave]" + message, 900)
 //-pt-//
 //Timer
-if global.panic = true
+if global.panic = 1
 {
 if global.seconds < 10
 {
