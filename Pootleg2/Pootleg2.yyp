@@ -185,6 +185,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Unused","folderPath":"folders/Tile Sets/Unused.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"War","folderPath":"folders/Tile Sets/War.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"entrance","folderPath":"folders/Rooms/levels/entrance.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -1119,6 +1120,7 @@
     {"id":{"name":"spr_player_outofpizza4","path":"sprites/spr_player_outofpizza4/spr_player_outofpizza4.yy",},},
     {"id":{"name":"spr_tvtalking3","path":"sprites/spr_tvtalking3/spr_tvtalking3.yy",},},
     {"id":{"name":"spr_playerN_clownfall","path":"sprites/spr_playerN_clownfall/spr_playerN_clownfall.yy",},},
+    {"id":{"name":"entrance_1","path":"rooms/entrance_1/entrance_1.yy",},},
     {"id":{"name":"bg_trapscreen_tileset","path":"tilesets/bg_trapscreen_tileset/bg_trapscreen_tileset.yy",},},
     {"id":{"name":"spr_playerSP_walkfront","path":"sprites/spr_playerSP_walkfront/spr_playerSP_walkfront.yy",},},
     {"id":{"name":"tile_farm","path":"sprites/tile_farm/tile_farm.yy",},},
@@ -1823,6 +1825,7 @@
     {"roomId":{"name":"ancient_1","path":"rooms/ancient_1/ancient_1.yy",},},
     {"roomId":{"name":"ancient_2","path":"rooms/ancient_2/ancient_2.yy",},},
     {"roomId":{"name":"war_1","path":"rooms/war_1/war_1.yy",},},
+    {"roomId":{"name":"entrance_1","path":"rooms/entrance_1/entrance_1.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [

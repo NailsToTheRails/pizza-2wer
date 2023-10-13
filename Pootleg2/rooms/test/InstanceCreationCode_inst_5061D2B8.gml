@@ -1,1 +1,1 @@
-text = "Fuck you Alejandro Dominigues Pujadas!"
+text = "AGH IM CUMMING~"

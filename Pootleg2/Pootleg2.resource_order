@@ -171,6 +171,7 @@
     {"name":"Unused","order":23,"path":"folders/Tile Sets/Unused.yy",},
     {"name":"War","order":24,"path":"folders/Tile Sets/War.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"entrance","order":5,"path":"folders/Rooms/levels/entrance.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_knightpep_idle","order":10,"path":"sprites/spr_knightpep_idle/spr_knightpep_idle.yy",},

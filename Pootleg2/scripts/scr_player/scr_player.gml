@@ -217,11 +217,11 @@ var move = (keyboard_check(vk_right) - keyboard_check(vk_left))
 	{
 				image_speed = move / 2.5
 		image_xscale = move
-		sprite_index = spr_superjumpprep
+		sprite_index = spr_superjumpmove
 image_speed = 0.4
 	}
 	else {
-		sprite_index = spr_superjumpmove
+		sprite_index = spr_superjumpprep
 		image_speed = 0.4
 	}
 	if (keyboard_check_released(vk_up)) {
@@ -234,14 +234,14 @@ image_speed = 0.4
 function scr_player_superjump() {
 		mask_index = spr_player_mask
 var move = (keyboard_check(vk_right) - keyboard_check(vk_left))
-	hsp = approach(hsp, move * 0.05, 1)
+	hsp = approach(hsp, move * 0.1, 1)
 		vsp = -20
 			if (place_meeting(x,y - 2,obj_solid))
 	{
 		state = states.superjumpland
 		sprite_index = spr_superjumpland
 	}
-	if (keyboard_check(vk_shift)) {
+	if (keyboard_check_pressed(vk_shift)) {
 	state = states.machjump	
 	hsp = 9 * image_xscale
 	vsp = -5
@@ -330,7 +330,7 @@ function scr_player_machjump()
 		} else if (mach = 1){ 
 			hsp = image_xscale * 4
 		}
-	sprite_index = spr_machjump
+
 	if (grounded) {
 		if (mach = 3) {
 		state = states.mach
@@ -343,6 +343,12 @@ function scr_player_machjump()
 	if (!keyboard_check(vk_shift))
 	{
 		state = states.jump
+	}
+	if (keyboard_check(vk_down)) {
+			sprite_index = spr_dive
+	vsp = 12
+	} else {
+		sprite_index = spr_machjump	
 	}
 }
 function scr_player_machturn()
