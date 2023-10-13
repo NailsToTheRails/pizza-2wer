@@ -19,7 +19,7 @@ if ((ds_list_find_index(global.saveroom, id) == -1))
             break
 						        case test:
             global.minutes = 0
-            global.seconds = 5;
+            global.seconds = 15;
             break
     }
  
