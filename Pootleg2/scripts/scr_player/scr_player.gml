@@ -442,8 +442,9 @@ if (!keyboard_check(vk_down) && grounded && !place_meeting(x,y-20,obj_solid))
 	}
 	if (!grounded)
 	{
+				mask_index = spr_crouchmask
 		state = states.machjump
-		mask_index = spr_player_mask
+
 	}
 	if (place_meeting(x+image_xscale,y,obj_solid))
 	{
@@ -471,7 +472,10 @@ function scr_player_walljump()
 		state = states.walljump
 		}
     }
-	
+	  if (place_meeting(x,y-2,obj_solid))
+    {
+ state = states.superjumpland
+    }
     if (place_meeting(x+image_xscale,y,obj_solid))
     {
         sprite_index = spr_wallrun
