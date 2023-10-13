@@ -1,4 +1,4 @@
-if (global.panic = 0) {
+if (global.panic = false) {
     image_index = 0
 image_alpha = 0.5	
 }

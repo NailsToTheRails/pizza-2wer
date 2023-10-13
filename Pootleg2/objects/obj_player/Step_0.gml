@@ -66,11 +66,6 @@ global.solidvisibility = true
 } else if (keyboard_check_pressed(vk_f5) && global.solidvisibility = true ) {
 global.solidvisibility = false
 }
-if (keyboard_check_pressed(vk_f4) && global.panic = false ) {
-global.panic = true
-} else if (keyboard_check_pressed(vk_f4) && global.panic = true ) {
-global.panic = false
-}
 if (keyboard_check_pressed(vk_f3)) {
 global.laps += 1	
 }

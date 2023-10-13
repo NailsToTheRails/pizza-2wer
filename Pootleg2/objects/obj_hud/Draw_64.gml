@@ -7,28 +7,7 @@ draw_set_font(global.ptfont);
 draw_text_scribble_ext(xi, yi, "[wheel][fa_center][rainbow][wave]" + message, 900)
 //-pt-//
 //Timer
-if global.panic = 1
-{
-if global.seconds < 10
-{
-if global.minutes < 1
-{
-}
-else
-	draw_text_scribble_ext(480,65,"[fa_center]" + string(global.minutes) + ":0" + string(global.seconds), 900)
-}
-else if global.seconds >= 10
-{
-if global.minutes = 0 && global.seconds <= 30
-{
-}
-else
-	draw_text_scribble_ext(480,65,"[fa_center]" + string(global.minutes) + ":" + string(global.seconds), 900)
-}
-}
-if (global.panic = 1 && global.laps) {
-	draw_text_scribble_ext(480, 95, "[fa_center][wave]LAPS : " + string(global.laps), 900)
-}
+// ill work on this later!
 
 	//collecttv//
 		var hud_xx = 121 + irandom_range(-collect_shake, collect_shake);

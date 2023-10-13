@@ -1,6 +1,6 @@
 		var roomname = room_get_name(room)
 		var i = 0
-if (global.panic = 0) {
+if (global.panic = false) {
 		 if (string_letters(roomname) == "test")
     {
 		if (!audio_is_playing(mu_test))

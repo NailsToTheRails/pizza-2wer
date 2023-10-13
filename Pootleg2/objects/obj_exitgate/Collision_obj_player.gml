@@ -1,11 +1,11 @@
 //why
 if (keyboard_check(vk_up)) {
-if (global.panic = 1) {
+if (global.panic = true) {
 room_goto(rankroom)	
 obj_player.x = room_width / 2
 obj_player.y = room_height / 2
 obj_player.state = states.rank
-global.panic = 0
+global.panic = false
 //restart
 //fixed this shit
 

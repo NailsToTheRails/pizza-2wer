@@ -49,7 +49,13 @@ function Approach(a, b, amount)
 	}
 	return a;
 }
-
+function concat()
+{
+	var _string = "";
+	for (var i = 0; i < argument_count; i++)
+		_string += string(argument[i]);
+	return _string;
+}
 /// @description Returns the id of a tile at a given depth and position.
 /// @param depth The depth of the tile to be found.
 /// @param x The x position to check.
@@ -265,8 +271,7 @@ function scr_playerreset() {
 	instance_destroy(obj_timesup)
 		if instance_exists(obj_pizzaface)
 	instance_destroy(obj_pizzaface)
-	global.seconds = 59
-	global.minutes = 1
+	global.fill = 500
 	obj_player.state = states.normal
 
 
