@@ -7,8 +7,46 @@ draw_set_font(global.ptfont);
 draw_text_scribble_ext(xi, yi, "[wheel][fa_center][rainbow][wave]" + message, 900)
 //-pt-//
 //Timer
-// ill work on this later!
-
+if (global.panic)
+{
+	var _fill = global.fill;
+	var _currentbarpos = chunkmax - _fill;
+	_perc = _currentbarpos / chunkmax;
+	var _max_x = 299;
+	var _barpos = _max_x * _perc;
+	if (!surface_exists(bar_surface))
+		bar_surface = surface_create(298, 30);
+	var _barfillpos = floor(_barpos) + 13;
+	if (_barfillpos > 0)
+	{
+		surface_resize(bar_surface, _barfillpos, 30);
+		surface_set_target(bar_surface);
+		draw_clear_alpha(0, 0);
+		var clip_x = timer_x + 3;
+		var clip_y = timer_y + 5;
+		for (i = 0; i < 3; i++)
+			draw_sprite(spr_timer_barfill, 0, barfill_x + (i * 173), 0);
+		surface_reset_target();
+		draw_surface(bar_surface, clip_x, clip_y);
+	}
+	draw_sprite(spr_timer_bar, -1, timer_x, timer_y);
+	draw_sprite(johnface_sprite, johnface_index, timer_x + 13 + _barpos, timer_y + 20);
+	var timerspr = pizzaface_sprite;
+	if (timer_tower)
+		timerspr = spr_timer_tower;
+	draw_sprite(timerspr, pizzaface_index, timer_x + 320, timer_y + 10);
+	var minutes = 0;
+	for (var seconds = ceil(global.fill / 12); seconds > 59; seconds -= 60)
+		minutes++;
+	if (seconds < 10)
+		seconds = concat("0", seconds);
+	else
+		seconds = string(seconds);
+	draw_set_halign(1);
+	draw_set_valign(1);
+	draw_set_font(global.ptfont);
+	draw_text(timer_x + 153, timer_y + 18, concat(minutes, ":", seconds));
+}
 	//collecttv//
 		var hud_xx = 121 + irandom_range(-collect_shake, collect_shake);
 	var hud_yy = 90 + irandom_range(-collect_shake, collect_shake) + hud_posY;

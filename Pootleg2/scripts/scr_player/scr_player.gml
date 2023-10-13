@@ -309,7 +309,7 @@ state = states.machjump
 	}
 	if (!keyboard_check(vk_shift))
 		state = states.normal
-		if (keyboard_check_pressed(vk_down) && grounded)
+		if (keyboard_check(vk_down) && grounded)
 	{
 		state = states.machslide	
 	}
