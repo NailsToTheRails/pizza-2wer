@@ -192,7 +192,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.106",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"spr_knightpep_idle","path":"sprites/spr_knightpep_idle/spr_knightpep_idle.yy",},},
@@ -1012,6 +1012,7 @@
     {"id":{"name":"spr_player_ratballoon","path":"sprites/spr_player_ratballoon/spr_player_ratballoon.yy",},},
     {"id":{"name":"spr_grandpop","path":"sprites/spr_grandpop/spr_grandpop.yy",},},
     {"id":{"name":"spr_player_buttattackstart","path":"sprites/spr_player_buttattackstart/spr_player_buttattackstart.yy",},},
+    {"id":{"name":"obj_invisiblenonsoliddoorshit","path":"objects/obj_invisiblenonsoliddoorshit/obj_invisiblenonsoliddoorshit.yy",},},
     {"id":{"name":"spr_icepopbg","path":"sprites/spr_icepopbg/spr_icepopbg.yy",},},
     {"id":{"name":"spr_sausagecollect","path":"sprites/spr_sausagecollect/spr_sausagecollect.yy",},},
     {"id":{"name":"sprite_tile_war1shadow","path":"sprites/sprite_tile_war1shadow/sprite_tile_war1shadow.yy",},},
@@ -1361,6 +1362,7 @@
     {"id":{"name":"tile_industrialcomplex","path":"tilesets/tile_industrialcomplex/tile_industrialcomplex.yy",},},
     {"id":{"name":"spr_bigcollect3SP","path":"sprites/spr_bigcollect3SP/spr_bigcollect3SP.yy",},},
     {"id":{"name":"sfx_machturn","path":"sounds/sfx_machturn/sfx_machturn.yy",},},
+    {"id":{"name":"war_2","path":"rooms/war_2/war_2.yy",},},
     {"id":{"name":"spr_player_slam","path":"sprites/spr_player_slam/spr_player_slam.yy",},},
     {"id":{"name":"spr_peppino_duel","path":"sprites/spr_peppino_duel/spr_peppino_duel.yy",},},
     {"id":{"name":"spr_player_suplexcancel","path":"sprites/spr_player_suplexcancel/spr_player_suplexcancel.yy",},},
@@ -1472,6 +1474,7 @@
     {"id":{"name":"spr_playerSP_haulingwalk","path":"sprites/spr_playerSP_haulingwalk/spr_playerSP_haulingwalk.yy",},},
     {"id":{"name":"pal_swap_get_pal_color","path":"scripts/pal_swap_get_pal_color/pal_swap_get_pal_color.yy",},},
     {"id":{"name":"spr_citycarnivalprops","path":"sprites/spr_citycarnivalprops/spr_citycarnivalprops.yy",},},
+    {"id":{"name":"spr_invisiblenonsolidobjectwhichisusedfordoorshit","path":"sprites/spr_invisiblenonsolidobjectwhichisusedfordoorshit/spr_invisiblenonsolidobjectwhichisusedfordoorshit.yy",},},
     {"id":{"name":"spr_pizzaportalend","path":"sprites/spr_pizzaportalend/spr_pizzaportalend.yy",},},
     {"id":{"name":"spr_player_mortattackfront","path":"sprites/spr_player_mortattackfront/spr_player_mortattackfront.yy",},},
     {"id":{"name":"spr_player_handgesture2","path":"sprites/spr_player_handgesture2/spr_player_handgesture2.yy",},},
@@ -1836,6 +1839,7 @@
     {"roomId":{"name":"ancient_2","path":"rooms/ancient_2/ancient_2.yy",},},
     {"roomId":{"name":"war_1","path":"rooms/war_1/war_1.yy",},},
     {"roomId":{"name":"entrance_1","path":"rooms/entrance_1/entrance_1.yy",},},
+    {"roomId":{"name":"war_2","path":"rooms/war_2/war_2.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [
