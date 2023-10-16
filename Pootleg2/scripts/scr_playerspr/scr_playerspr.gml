@@ -38,6 +38,7 @@ spr_superjumpprep = spr_player_superjumppreplight
 	spr_superjumpmove = spr_player_superjumpright
 	spr_superjumpland = spr_player_superjumpland
 	spr_dive = spr_player_dive
+	spr_groundslam = spr_player_poundcancel1
 		}
 			if (character == "SP") {
 					spr_palette = spr_pizzypalette
@@ -78,6 +79,7 @@ spr_superjumpprep = spr_player_superjumppreplight
 	spr_superjumpland = spr_playerSP_superjumpland
 		spr_superjumpmove = spr_playerSP_superjumpright
 			spr_dive = spr_playerSP_dive
+				spr_groundslam = spr_playerSP_poundcancel2
 			}
 				if (character == "N") {
 					spr_palette = spr_noisepalette
@@ -118,5 +120,6 @@ spr_superjumpprep = spr_player_superjumppreplight
 	spr_superjumpland = spr_playerN_Sjumpland
 		spr_superjumpmove = spr_playerN_Sjumpmoveright
 			spr_dive = spr_playerN_dive
+				spr_groundslam = spr_player_poundcancel1
 				}
 }

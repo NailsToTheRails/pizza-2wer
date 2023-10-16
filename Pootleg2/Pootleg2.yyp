@@ -192,7 +192,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.8.2.106",
   },
   "resources": [
     {"id":{"name":"spr_knightpep_idle","path":"sprites/spr_knightpep_idle/spr_knightpep_idle.yy",},},
@@ -306,6 +306,7 @@
     {"id":{"name":"spr_pizzaportalentrance","path":"sprites/spr_pizzaportalentrance/spr_pizzaportalentrance.yy",},},
     {"id":{"name":"spr_playerN_noisebombthrow","path":"sprites/spr_playerN_noisebombthrow/spr_playerN_noisebombthrow.yy",},},
     {"id":{"name":"spr_pizzakincheese_panic","path":"sprites/spr_pizzakincheese_panic/spr_pizzakincheese_panic.yy",},},
+    {"id":{"name":"spr_garbagesucroseremix","path":"sprites/spr_garbagesucroseremix/spr_garbagesucroseremix.yy",},},
     {"id":{"name":"spr_timer_tower","path":"sprites/spr_timer_tower/spr_timer_tower.yy",},},
     {"id":{"name":"scribble_font_add_all","path":"scripts/scribble_font_add_all/scribble_font_add_all.yy",},},
     {"id":{"name":"spr_ratblock6_dead","path":"sprites/spr_ratblock6_dead/spr_ratblock6_dead.yy",},},

@@ -178,8 +178,13 @@ function scr_player_bodyslam() {
 	image_speed = 0.4;
 var move = (keyboard_check(vk_right) - keyboard_check(vk_left))
 	hsp = approach(hsp, move * 4, 0.46)
+	if (		groundslam = 1 ) {
+sprite_index = spr_groundslam
+	} else {
 sprite_index = spr_groundpound
+	}
 if (grounded) {
+			groundslam = 0
 	if (place_meeting(x,y+2,obj_slope))
 		{
 			var slopexscale = instance_place(x,y+1,obj_slope)
@@ -347,6 +352,13 @@ function scr_player_machjump()
 	if (keyboard_check(vk_down)) {
 			sprite_index = spr_dive
 	vsp = 12
+	if (keyboard_check_pressed(ord("Z")))
+	{
+		state = states.bodyslam
+		scr_sssound(sound_jump)
+		vsp = -14
+		groundslam = 1
+	}
 	} else {
 		sprite_index = spr_machjump	
 	}

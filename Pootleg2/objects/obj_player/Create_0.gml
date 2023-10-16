@@ -4,6 +4,7 @@ scr_enuminit();
 mach1snd = -1
 mach2snd = -1
 mach3snd = -1
+		groundslam = 0
 paletteselect = 1;
 global.palettetexture = -4;
 global.palettesurface = -4;
