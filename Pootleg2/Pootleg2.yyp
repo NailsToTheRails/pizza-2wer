@@ -1794,7 +1794,6 @@
     {"id":{"name":"tileset_ruin","path":"tilesets/tileset_ruin/tileset_ruin.yy",},},
     {"id":{"name":"tile_desertsecret","path":"tilesets/tile_desertsecret/tile_desertsecret.yy",},},
     {"id":{"name":"tile_tutorial_tileset","path":"tilesets/tile_tutorial_tileset/tile_tutorial_tileset.yy",},},
-    {"id":{"name":"spr_numfont","path":"sprites/spr_numfont/spr_numfont.yy",},},
     {"id":{"name":"spr_player_Sjumpcancelstart","path":"sprites/spr_player_Sjumpcancelstart/spr_player_Sjumpcancelstart.yy",},},
     {"id":{"name":"tile_taskroom","path":"tilesets/tile_taskroom/tile_taskroom.yy",},},
     {"id":{"name":"spr_playerN_boxxeddashstart","path":"sprites/spr_playerN_boxxeddashstart/spr_playerN_boxxeddashstart.yy",},},

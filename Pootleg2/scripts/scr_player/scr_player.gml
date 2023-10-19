@@ -858,41 +858,50 @@ image_speed = 0.35
 	
 }
 	//@basic shit
-	function scr_player_grab() {
-		canmove = 0
-		if (grounded) {
-sprite_index = spr_shoulderbash
-		} else {
-		sprite_index = spr_shoulderbashair	
-		}
-	image_speed = 0.5
-	hsp = 8 * image_xscale
-	if (grounded) {
-if ((floor(image_index) == (image_number - 1)) ) 
+function scr_player_grab()
 {
-	canmove = 1
-state = states.normal	
+    canmove = 0
+    if (grounded)
+        sprite_index = spr_shoulderbash
+    else
+        sprite_index = spr_shoulderbashair
+    
+    image_speed = 0.5
+    hsp = 8 * image_xscale
+    
+    if grounded
+    {
+        if floor(image_index) == image_number - 1
+        {
+            canmove = 1
+            state = states.normal    
+        }
+    } 
+    else if grounded
+    {
+        state = states.normal
+        canmove = 1
+    }
+    
+    if place_meeting(x + image_xscale, y, obj_solid)
+    {
+        canmove = 1
+        state = states.normal    
+    }
+    if grounded && floor(image_index) == image_number - 1
+    {
+        if keyboard_check(vk_shift)
+        {
+            state = states.mach    
+            canmove = 1
+        }
+    }
+    
+    // grab cancel
+    if keyboard_check_pressed(vk_left) and image_xscale == 1
+    or keyboard_check_pressed(vk_right) and image_xscale == -1
+    {
+        canmove = 1
+        state = states.normal
+    }
 }
-	} else {
-	if (grounded) {
-	state = states.normal
-	canmove = 1
-	}
-	}
-	if (place_meeting(x+image_xscale,y,obj_solid))
-	{
-		canmove = 1
-	state = states.normal	
-	}
-	if (grounded && (floor(image_index) == (image_number - 1))) {
-	if (keyboard_check(vk_shift)) {
-	state = states.mach	
-	canmove = 1
-	}
-	}
-		if keyboard_check_pressed(vk_left) and image_xscale == 1
-	or keyboard_check_pressed(vk_right) and image_xscale == -1 { // grab cancel
-		canmove = 1
-		state = states.normal
-	}
-	}

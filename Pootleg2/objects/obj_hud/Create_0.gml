@@ -13,7 +13,6 @@ global.laps = 0;
    global.timesup = false
 message = "TEST"
 global.ptfont = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", true, 0);
-global.numfont = font_add_sprite_ext(spr_numfont,"0123456789/", true,1)
 chunkmax = 0;
 timer_xplus = -153;
 timer_yplus = 0;
