@@ -29,6 +29,7 @@ switch (state)
 		case states.superjumpprep: scr_player_superjumpprep() break
 		case states.superjump: scr_player_superjump() break
 				case states.superjumpland: scr_player_superjumpland() break
+				case states.shoulderbash: scr_player_grab() break
 	//transfo
 	case states.knightjump: scr_player_knightjump() break
 	case states.knight: scr_player_knightnormal() break
@@ -51,6 +52,10 @@ visible = true
 }
 if (state = states.mach || state = states.machjump || state = states.machslide || state = states.machturn) {
 	instance_create(x, y, obj_mach3effect)
+}
+if (keyboard_check_pressed(ord("X")) && canmove = 1) {
+state = states.shoulderbash
+
 }
 hurtframes = clamp(hurtframes,0,10)
 if (hurtframes > 0) {

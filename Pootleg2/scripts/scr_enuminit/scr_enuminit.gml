@@ -29,6 +29,7 @@ enum states {
 	gameover,
 	superjumpprep,
 	superjump,
-	superjumpland
+	superjumpland,
+	shoulderbash
 }
 }

@@ -1,6 +1,7 @@
  //@idle
 function scr_player_normal()
 {
+	canmove = 1
 		mask_index = spr_player_mask
 	 if (keyboard_check(vk_shift))
 	{
@@ -42,6 +43,7 @@ function scr_player_normal()
 //@jump
 function scr_player_jump()
 {
+	canmove = 1
 		mask_index = spr_player_mask
 					image_speed = 0.4;
 	 if (jumpAnim == 1) {
@@ -86,6 +88,7 @@ function scr_player_jump()
 //@hurt
 function scr_player_hurt()
 {
+	canmove = 0
 	jumpAnim = 1
 	var move = (keyboard_check(vk_right) - keyboard_check(vk_left))
 	hsp = approach(hsp, move * 6, 0.32)
@@ -97,6 +100,7 @@ function scr_player_hurt()
 //@crouch
 function scr_player_crouch()
 {
+canmove = 0
 	jumpAnim = 1
 				image_speed = 0.4;
 		var move = (keyboard_check(vk_right) - keyboard_check(vk_left))
@@ -125,6 +129,7 @@ if (!keyboard_check(vk_down) && grounded && !place_meeting(x,y-20,obj_solid))
 }
 function scr_player_crouchjump()
 {
+	canmove = 0
 		    if (jumpAnim == 1) {
 	        if (floor(image_index) == (image_number - 1)) 
 				jumpAnim = 0;
@@ -174,6 +179,7 @@ function scr_player_crouchjump()
 }
 //@bodysuck
 function scr_player_bodyslam() {
+	canmove = 0
 	vsp = approach(vsp,12,5)
 	image_speed = 0.4;
 var move = (keyboard_check(vk_right) - keyboard_check(vk_left))
@@ -214,6 +220,7 @@ if (grounded) {
 }
 //@mach
 function scr_player_superjumpprep() {
+	canmove = 0
 image_speed = 0.4
 mask_index = spr_crouchmask
 var move = (keyboard_check(vk_right) - keyboard_check(vk_left))
@@ -237,6 +244,7 @@ image_speed = 0.4
 	}
 }
 function scr_player_superjump() {
+	canmove = 0
 		mask_index = spr_player_mask
 var move = (keyboard_check(vk_right) - keyboard_check(vk_left))
 	hsp = approach(hsp, move * 0.1, 1)
@@ -254,6 +262,7 @@ var move = (keyboard_check(vk_right) - keyboard_check(vk_left))
 	image_speed = 0.4
 }
 function scr_player_superjumpland() {
+	canmove = 0
 		mask_index = spr_player_mask
 			image_speed = 1
 	vsp = 0
@@ -265,6 +274,7 @@ function scr_player_superjumpland() {
 }
 function scr_player_mach1()
 {
+	canmove = 1
 if (!grounded) {
 state = states.machjump	
 }
@@ -322,6 +332,7 @@ state = states.machjump
 }
 function scr_player_machjump()
 {
+	canmove = 1
 	if (place_meeting(x+image_xscale,y,obj_solid))
 	{
 		state = states.walljump
@@ -365,6 +376,7 @@ function scr_player_machjump()
 }
 function scr_player_machturn()
 {
+	canmove = 0
     if (grounded)
     {
 		if (place_meeting(x+image_xscale,y,obj_solid))
@@ -426,6 +438,7 @@ function scr_player_machturn()
 }
 function scr_player_bashend()
 {
+	canmove = 0
 	image_speed = 0.4;
 sprite_index = spr_machend
 	if (grounded)
@@ -433,7 +446,7 @@ sprite_index = spr_machend
 }
 function scr_player_machslide()
 {
-
+canmove = 0
 	sprite_index = spr_machroll
 				if (mach = 3) {
 					hsp = image_xscale * 9
@@ -468,6 +481,7 @@ if (!keyboard_check(vk_down) && grounded && !place_meeting(x,y-20,obj_solid))
 }
 function scr_player_walljump()
 {
+	canmove = 0
 	if (keyboard_check(vk_shift)) {
     vsp = -9
     if (grounded) 
@@ -523,6 +537,7 @@ state = states.jump
 //mach 2
 function scr_player_mach2()
 {
+	canmove = 1
 	if (!grounded) {
 state = states.machjump	
 }
@@ -579,6 +594,7 @@ state = states.machjump
 //mach 1
 function scr_player_mach()
 {
+		canmove = 1
 if (!grounded) {
 state = states.machjump	
 }
@@ -626,6 +642,7 @@ mach = 1
 }
 //@powers
 function scr_player_knightslide() {
+		canmove = 0
 	hsp = image_xscale * 12
 	if (place_meeting(obj_player.x+image_xscale,obj_player.y,obj_solid))
 	{
@@ -651,6 +668,7 @@ function scr_player_knightslide() {
 	} 
 	}
 function scr_player_knightnormal() {
+		canmove = 0
 	var move = (keyboard_check(vk_right) - keyboard_check(vk_left))
 	hsp = approach(hsp, move * 6, 0.42)
 	if (move != 0)
@@ -705,6 +723,7 @@ function scr_player_knightnormal() {
 	}
 }
 function scr_player_knightjump() {
+		canmove = 0
 			if (grounded)
 	{
 		if (place_meeting(x,y+2,obj_slope))
@@ -756,6 +775,7 @@ function scr_player_knightjump() {
 } 
 function scr_player_fireass()
 {
+		canmove = 0
 					image_speed = 0.4;
 	if (grounded) {
 	state = states.normal	
@@ -781,9 +801,11 @@ function scr_player_fireass()
 function scr_player_getrank() {
 	vsp = 0
 	hsp = 0
+		canmove = 0
 }
 	//@timesup
 function scr_player_timesup() {
+		canmove = 0
 	sprite_index = spr_timesupanim
 	if place_meeting(x,y,obj_timesup)
 	{
@@ -804,6 +826,7 @@ function scr_player_timesup() {
 	image_speed = 0
 }
 function scr_player_gameover() {
+	canmove = 0
 image_speed = 0.35
 
 	//Horizontal Collision
@@ -834,3 +857,42 @@ image_speed = 0.35
 
 	
 }
+	//@basic shit
+	function scr_player_grab() {
+		canmove = 0
+		if (grounded) {
+sprite_index = spr_shoulderbash
+		} else {
+		sprite_index = spr_shoulderbashair	
+		}
+	image_speed = 0.5
+	hsp = 8 * image_xscale
+	if (grounded) {
+if ((floor(image_index) == (image_number - 1)) ) 
+{
+	canmove = 1
+state = states.normal	
+}
+	} else {
+	if (grounded) {
+	state = states.normal
+	canmove = 1
+	}
+	}
+	if (place_meeting(x+image_xscale,y,obj_solid))
+	{
+		canmove = 1
+	state = states.normal	
+	}
+	if (grounded && (floor(image_index) == (image_number - 1))) {
+	if (keyboard_check(vk_shift)) {
+	state = states.mach	
+	canmove = 1
+	}
+	}
+		if keyboard_check_pressed(vk_left) and image_xscale == 1
+	or keyboard_check_pressed(vk_right) and image_xscale == -1 { // grab cancel
+		canmove = 1
+		state = states.normal
+	}
+	}
