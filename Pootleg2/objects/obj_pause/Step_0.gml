@@ -1,4 +1,4 @@
-sel = clamp(sel,0,3)
+sel = clamp(sel,0,2)
 if (keyboard_check_pressed(vk_up)) {
 sel -= 1
 }

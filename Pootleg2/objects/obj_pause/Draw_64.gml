@@ -21,3 +21,4 @@ if (pause == 1) {
 		draw_text_auto(480, yy + (sepy * i), txt);
 	}
 }
+draw_text_auto(20,50,sel)

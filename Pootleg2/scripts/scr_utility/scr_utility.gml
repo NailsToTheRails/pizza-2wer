@@ -280,7 +280,6 @@ function draw_set_blend_mode(argument0) { // Feather disable all
 function scr_playerreset() {
 
 
-	obj_music.fadeoff = 0
 	audio_stop_all()
 
 
