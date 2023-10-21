@@ -30,11 +30,11 @@ if (showtext == 0)
 
 		
 		
-		if (room = rankroom) {
-		visible = false	
-		} else {
-		visible = true	
-		}
+if (room = heyyouroom || room = timesuproom || room = rankroom) {
+visible = false	
+} else {
+visible = true	
+}
 		
 		pizzaface_index += 0.35;
 hand_index += 0.35;

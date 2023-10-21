@@ -6,8 +6,7 @@ draw_text(53,350,obj_player.x)
 
 draw_set_font(global.ptfont);
 	draw_sprite_ext(spr_tvdefault,image_index,860,85,1,1,0,c_white,1)
-	draw_set_valign()
-draw_text(855, 74, string(global.collect))
+draw_text_scribble(855, 74, "[fa_center]" + string(global.collect))
 draw_text_scribble_ext(xi, yi, "[wheel][fa_center][rainbow][wave]" + message, 900)
 //-pt-//
 //Timer

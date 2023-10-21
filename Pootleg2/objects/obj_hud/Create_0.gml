@@ -30,3 +30,8 @@ hand_index = 0;
 bar_surface = -4;
 barfill_x = 0;
 showtime_buffer = 0;
+if (room = heyyouroom || room = timesuproom || room = rankroom) {
+visible = false	
+} else {
+visible = true	
+}

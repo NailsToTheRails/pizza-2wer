@@ -56,6 +56,23 @@ function concat()
 		_string += string(argument[i]);
 	return _string;
 }
+function draw_text_auto(x, y, str, sep = undefined, w = undefined, alpha = draw_get_alpha())
+{
+	str = string(str);
+	
+	if draw_get_font() == global.ptfont
+		str = string_upper(str);
+	
+	var aprev = draw_get_alpha();
+	draw_set_alpha(alpha);
+	
+	if is_undefined(sep) && is_undefined(w)
+		draw_text(x, y, str);
+	else
+		draw_text_ext(x, y, str, sep, w);
+	
+	draw_set_alpha(aprev);
+}
 /// @description Returns the id of a tile at a given depth and position.
 /// @param depth The depth of the tile to be found.
 /// @param x The x position to check.

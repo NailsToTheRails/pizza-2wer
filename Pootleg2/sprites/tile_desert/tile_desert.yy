@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "tile_desert",
-  "bbox_bottom": 624,
+  "bbox_bottom": 287,
   "bbox_left": 0,
   "bbox_right": 319,
   "bbox_top": 0,
@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7ddb8f60-4b95-4945-910a-f373cf3ea07b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1a3f6aac-0e41-4424-9ea0-2558174cec85",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 700,
+  "height": 320,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f1d6fb09-6068-4793-ad16-41769d192db7","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"013cf262-a97a-4b95-83f4-40a732bae029","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Desert",
-    "path": "folders/Sprites/Tilesets/Desert.yy",
+    "name": "Tilesets",
+    "path": "folders/Sprites/Tilesets.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7ddb8f60-4b95-4945-910a-f373cf3ea07b","path":"sprites/tile_desert/tile_desert.yy",},},},"Disabled":false,"id":"0b562227-5f7a-4811-9cb1-d8e531e6d0d0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1a3f6aac-0e41-4424-9ea0-2558174cec85","path":"sprites/tile_desert/tile_desert.yy",},},},"Disabled":false,"id":"02a866d8-7d5e-4c2d-9a9f-79b6f7d1913b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

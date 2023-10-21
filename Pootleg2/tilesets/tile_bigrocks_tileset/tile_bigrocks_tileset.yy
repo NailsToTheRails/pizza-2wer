@@ -12,14 +12,14 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Desert",
-    "path": "folders/Tile Sets/Desert.yy",
+    "name": "Tile Sets",
+    "path": "folders/Tile Sets.yy",
   },
   "spriteId": {
-    "name": "tile_bigrocks",
-    "path": "sprites/tile_bigrocks/tile_bigrocks.yy",
+    "name": "tile_bigrocks_tileset_sprite",
+    "path": "sprites/tile_bigrocks_tileset_sprite/tile_bigrocks_tileset_sprite.yy",
   },
-  "spriteNoExport": false,
+  "spriteNoExport": true,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -177,9 +177,9 @@
   "tileAnimationFrames": [],
   "tileAnimationSpeed": 15.0,
   "tileHeight": 32,
-  "tilehsep": 0,
-  "tilevsep": 0,
+  "tilehsep": 4,
+  "tilevsep": 4,
   "tileWidth": 32,
-  "tilexoff": 0,
-  "tileyoff": 0,
+  "tilexoff": 2,
+  "tileyoff": 2,
 }
