@@ -28,6 +28,7 @@
     {"name":"hub","order":2,"path":"folders/Rooms/hub.yy",},
     {"name":"levels","order":3,"path":"folders/Rooms/levels.yy",},
     {"name":"ancient","order":3,"path":"folders/Rooms/levels/ancient.yy",},
+    {"name":"desert","order":6,"path":"folders/Rooms/levels/desert.yy",},
     {"name":"entrance","order":5,"path":"folders/Rooms/levels/entrance.yy",},
     {"name":"medieval","order":2,"path":"folders/Rooms/levels/medieval.yy",},
     {"name":"war","order":4,"path":"folders/Rooms/levels/war.yy",},
@@ -171,7 +172,6 @@
     {"name":"Unused","order":22,"path":"folders/Tile Sets/Unused.yy",},
     {"name":"War","order":23,"path":"folders/Tile Sets/War.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"desert","order":6,"path":"folders/Rooms/levels/desert.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_knightpep_idle","order":10,"path":"sprites/spr_knightpep_idle/spr_knightpep_idle.yy",},
