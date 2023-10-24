@@ -171,6 +171,7 @@
     {"name":"Unused","order":22,"path":"folders/Tile Sets/Unused.yy",},
     {"name":"War","order":23,"path":"folders/Tile Sets/War.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"SHA256","order":8,"path":"folders/Scripts/SHA256.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_knightpep_idle","order":10,"path":"sprites/spr_knightpep_idle/spr_knightpep_idle.yy",},
@@ -1449,6 +1450,7 @@
     {"name":"spr_pizzaportalfade","order":6,"path":"sprites/spr_pizzaportalfade/spr_pizzaportalfade.yy",},
     {"name":"test2","order":1,"path":"rooms/test2/test2.yy",},
     {"name":"spr_player_ratmountsupertaunt","order":249,"path":"sprites/spr_player_ratmountsupertaunt/spr_player_ratmountsupertaunt.yy",},
+    {"name":"scr_nailsencode","order":7,"path":"scripts/scr_nailsencode/scr_nailsencode.yy",},
     {"name":"tile_space3var","order":5,"path":"tilesets/tile_space3var/tile_space3var.yy",},
     {"name":"spr_player_longjump","order":178,"path":"sprites/spr_player_longjump/spr_player_longjump.yy",},
     {"name":"spr_doorvisited","order":1,"path":"sprites/spr_doorvisited/spr_doorvisited.yy",},
@@ -1653,6 +1655,7 @@
     {"name":"spr_playerN_boxxeddashstart","order":2,"path":"sprites/spr_playerN_boxxeddashstart/spr_playerN_boxxeddashstart.yy",},
     {"name":"spr_rankNA","order":5,"path":"sprites/spr_rankNA/spr_rankNA.yy",},
     {"name":"pattern_enable","order":10,"path":"scripts/pattern_enable/pattern_enable.yy",},
+    {"name":"string_sha256","order":17,"path":"scripts/string_sha256/string_sha256.yy",},
     {"name":"spr_playerN_bombabouttoexplode","order":1,"path":"sprites/spr_playerN_bombabouttoexplode/spr_playerN_bombabouttoexplode.yy",},
     {"name":"spr_playerN_fireassend","order":55,"path":"sprites/spr_playerN_fireassend/spr_playerN_fireassend.yy",},
     {"name":"spr_playerN_cheesedstick","order":26,"path":"sprites/spr_playerN_cheesedstick/spr_playerN_cheesedstick.yy",},

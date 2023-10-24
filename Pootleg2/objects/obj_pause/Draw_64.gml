@@ -21,4 +21,7 @@ if (pause == 1) {
 		draw_text_auto(480, yy + (sepy * i), txt);
 	}
 }
+if (pause = 0) {
+draw_set_color(c_white);	
+}
 draw_text_auto(20,50,sel)

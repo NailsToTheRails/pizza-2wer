@@ -85,7 +85,7 @@ function scr_player_jump()
 
 		}
 }
-//@hurt
+	//@hurt
 function scr_player_hurt()
 {
 	canmove = 0
@@ -97,7 +97,7 @@ function scr_player_hurt()
 	state = states.normal	
 	}
 }
-//@crouch
+		//@crouch
 function scr_player_crouch()
 {
 canmove = 0
@@ -177,7 +177,7 @@ function scr_player_crouchjump()
 				mask_index = spr_player_mask
 	}
 }
-//@bodysuck
+			//@bodysuck
 function scr_player_bodyslam() {
 	canmove = 0
 	vsp = approach(vsp,12,5)
@@ -218,7 +218,7 @@ if (grounded) {
 			}
 }
 }
-//@mach
+				//@mach
 function scr_player_superjumpprep() {
 	canmove = 0
 image_speed = 0.4
