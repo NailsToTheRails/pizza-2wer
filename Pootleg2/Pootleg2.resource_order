@@ -48,6 +48,7 @@
     {"name":"Superfonts","order":9,"path":"folders/Scribble/Superfonts.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
     {"name":"Player Scripts","order":2,"path":"folders/Scripts/Player Scripts.yy",},
+    {"name":"SHA256","order":8,"path":"folders/Scripts/SHA256.yy",},
     {"name":"Systems","order":6,"path":"folders/Scripts/Systems.yy",},
     {"name":"Palette Swapper","order":1,"path":"folders/Scripts/Systems/Palette Swapper.yy",},
     {"name":"Unown Collisions","order":1,"path":"folders/Scripts/Unown Collisions.yy",},
@@ -171,7 +172,6 @@
     {"name":"Unused","order":22,"path":"folders/Tile Sets/Unused.yy",},
     {"name":"War","order":23,"path":"folders/Tile Sets/War.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"SHA256","order":8,"path":"folders/Scripts/SHA256.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_knightpep_idle","order":10,"path":"sprites/spr_knightpep_idle/spr_knightpep_idle.yy",},
