@@ -34,7 +34,9 @@ switch (state)
 	case states.knightjump: scr_player_knightjump() break
 	case states.knight: scr_player_knightnormal() break
 	case states.knightslide: scr_player_knightslide() break
-		case states.fireass: scr_player_fireass() break
+	case states.fireass: scr_player_fireass() break
+	case states.mongstand: scr_player_mongus() break
+	case states.mongjump: scr_player_mongjump() break
 }
 if (keyboard_check_pressed(vk_f2)) {
 character = get_string("enter character", "");
@@ -43,6 +45,9 @@ paletteselect = 0
 } else {
 paletteselect = 1	
 }
+}
+if not (state = states.mongjump || state = states.mongstand) {
+image_yscale = 1
 }
 if (room = rankroom) {
 visible = false	

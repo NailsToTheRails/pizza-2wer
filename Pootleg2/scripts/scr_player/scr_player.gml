@@ -773,8 +773,7 @@ function scr_player_knightjump() {
 	  instance_create(x, y, obj_landcloud);
 	}
 } 
-function scr_player_fireass()
-{
+function scr_player_fireass() {
 		canmove = 0
 					image_speed = 0.4;
 	if (grounded) {
@@ -796,6 +795,99 @@ function scr_player_fireass()
 						sprite_index = spr_fireass
 
 		}
+}
+function scr_player_mongus() {
+		if (grav > -0.5) {
+		grounded = (place_meeting_collision(x, y + 1));
+		} else {
+		grounded = (place_meeting_collision(x, y - 1));
+		}
+		if (grav > -0.5) {
+		image_yscale = 1	
+		} else {
+		image_yscale = -1	
+		}
+		canmove = 0
+		mask_index = spr_player_mask
+	jumpAnim = 1
+	if (!grounded) {
+	state = states.mongjump	
+
+	}
+	var move = (keyboard_check(vk_right) - keyboard_check(vk_left))
+	hsp = approach(hsp, move * 6, 0.62)
+	if (move != 0)
+	{
+				image_speed = move / 2.5
+		image_xscale = move
+		sprite_index = spr_walk
+
+	}
+	else {
+		sprite_index = spr_idle
+	image_speed = 0.4;
+	}
+		if (grounded && keyboard_check(ord("Z"))) {
+		vsp = -23 * grav
+		grounded = false
+		state = states.mongjump
+			  scr_sssound(sound_jump)
+	 with (instance_create(x, y, obj_jumpdust)) {
+	image_yscale = other.image_yscale	 
+	 }
+		}
+	}
+function scr_player_mongjump() {
+	trace(grounded)
+		if (grav > -0.5) {
+		grounded = (place_meeting_collision(x, y + 1));
+		} else {
+		grounded = (place_meeting_collision(x, y - 1));
+		}
+	if (grav > -0.5) {
+	image_yscale = 1	
+	} else {
+	image_yscale = -1	
+	}
+		canmove = 0
+		mask_index = spr_player_mask
+					image_speed = 0.4;
+	 if (jumpAnim == 1) {
+	        if (floor(image_index) == (image_number - 1)) 
+				jumpAnim = 0;
+	    }
+	if (grounded) {
+		jumpAnim = 1;
+	state = states.mongstand
+	 with (instance_create(x, y, obj_landcloud)) {
+	image_yscale = other.image_yscale	 
+	 }
+	}
+		var move = (keyboard_check(vk_right) - keyboard_check(vk_left))
+	hsp = approach(hsp, move * 6, 0.62)
+	if (move != 0)
+	{
+		image_xscale = move
+			image_speed = 0.4;
+			if (jumpAnim == 1) {
+		sprite_index = spr_jump
+						image_speed = 0.4;
+			} else {
+						sprite_index = spr_fall
+										image_speed = 0.4;
+			}
+	}
+	else {
+			image_speed = 0.4;
+			if (jumpAnim == 1) {
+		sprite_index = spr_jump
+						image_speed = 0.4;
+			} else {
+						sprite_index = spr_fall
+										image_speed = 0.4;
+			}
+
+		}	
 }
 //@rank
 function scr_player_getrank() {

@@ -30,6 +30,8 @@ enum states {
 	superjumpprep,
 	superjump,
 	superjumpland,
-	shoulderbash
+	shoulderbash,
+	mongjump,
+	mongstand
 }
 }

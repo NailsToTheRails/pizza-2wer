@@ -6,6 +6,7 @@ obj_player.x = 274
 obj_player.y = 483
 pause = 0
 	instance_activate_all();
+	scr_playerreset();
 }  else if (sel = 1) {
     instance_activate_all()
 		global.panic = false
